@@ -2,10 +2,6 @@
 
 require_once 'moviedao.php';
 require_once 'movie.php';
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 
 /**
  * Description of example
@@ -16,7 +12,7 @@ require_once 'movie.php';
 /**
  * @uri /movie/{movieId}
  */
-class Example extends Resource {
+class MovieHandler extends Resource {
 
     public function get($request, $movieId) {
         $result = moviedao::getById($movieId);
